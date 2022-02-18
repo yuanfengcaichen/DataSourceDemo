@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    dynamic:
+      primary: mysql2 #??????????????,?????master
+      strict: false #???????,??false. true?????????????,false???????
+      datasource:
+        mysql1:
+          url: jdbc:mysql://localhost:3306/food?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+          username: root
+          password: 1qaz
+        mysql2:
+          url: jdbc:mysql://localhost:3306/food_2?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+          username: root
+          password: 1qaz

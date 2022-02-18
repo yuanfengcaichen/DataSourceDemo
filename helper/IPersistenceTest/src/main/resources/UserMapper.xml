@@ -1,0 +1,17 @@
+<mapper namespace="club.codeqi.Mapper.UserMapper">
+    <select id="selectOne" parameType="club.codeqi.pojo.User" resultType="club.codeqi.pojo.User">
+        select * from user where id = #{id}
+    </select>
+    <select id="selectList" parameType="club.codeqi.pojo.User" resultType="club.codeqi.pojo.User">
+        select * from user
+    </select>
+    <insert id="insertUser" parameType="club.codeqi.pojo.User" resultType="java.lang.Integer">
+        insert into user (username,password,birthday) values(#{username},#{password},#{birthday})
+    </insert>
+    <delete id="deleteUser" parameType="club.codeqi.pojo.User" resultType="java.lang.Integer">
+        delete from user where id = #{id}
+    </delete>
+    <update id="updateUser" parameType="club.codeqi.pojo.User" resultType="java.lang.Integer">
+        update user set username = #{username} where id = #{id}
+    </update>
+</mapper>

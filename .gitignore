@@ -1,0 +1,54 @@
+*.DS_Store
+*.class
+*.db
+*.zip
+*.txt
+*.pdf
+*.log
+*.log.*
+*.hql
+slides
+jar-libs
+.data/
+*/.data/
+*/logs/
+*bak
+*.docx#
+*.xlsx#
+
+#ignore target under current directory and all subdirectories:
+target/
+*/target/
+test-output/
+*/test-output/
+HELP.md
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+

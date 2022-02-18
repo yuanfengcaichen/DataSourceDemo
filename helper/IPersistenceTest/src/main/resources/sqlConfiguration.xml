@@ -1,0 +1,11 @@
+<configuration>
+
+    <property name="driver" value="com.mysql.jdbc.Driver"></property>
+    <property name="url" value="jdbc:mysql://localhost:3306/jdbc_test"></property>
+    <property name="username" value="root"></property>
+    <property name="password" value="1qaz"></property>
+
+    <mappers>
+        <mapper url="UserMapper.xml"></mapper>
+    </mappers>
+</configuration>
